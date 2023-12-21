@@ -18,10 +18,15 @@ CORS(app)  # Add this line to enable CORS
 
 # Define the database connection parameters
 db_config = {
-    "host": "localhost",
-    "user": "root",
-    "password": "",
-    "database": "brgy_information"
+    "host": "matinacrossing.mysql.database.azure.com",
+    "user": "admindb",
+    "password": "@Qwerty123",
+    "database": "brgy_informationdb",
+    "use_pure": True,  # Use pure Python implementation (important for SSL)
+    "ssl_ca": None,   # Do not specify SSL certificates
+    "ssl_cert": None,
+    "ssl_key": None,
+    "ssl_verify_identity": True,
 }
 
 # Establish a database connection

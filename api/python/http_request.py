@@ -43,7 +43,7 @@ except mysql.connector.Error as e:
 def register_user():
     logger.info("Received registration request")
     data = request.get_json()
-    name = data.get('name')
+    name = data.get('username')
     password = data.get('password')
 
     if not all([name, password]):

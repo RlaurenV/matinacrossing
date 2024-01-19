@@ -15,7 +15,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
     String name,
     String password,
   ) async {
-    final url = Uri.parse('https://matinacrossing.azurewebsites.net/register');
+    final url = Uri.parse('https://apimatina.azurewebsites.net/register');
 
     try {
       final response = await http.post(
